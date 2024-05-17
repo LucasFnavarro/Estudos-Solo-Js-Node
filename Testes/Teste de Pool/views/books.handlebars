@@ -1,0 +1,18 @@
+<div class="edit-books-disponivel">
+
+<h2>Página de livros</h2>
+
+{{#each books}}
+
+<div class="books-disponivel">
+  <p class="p-books-edit"><a href="/books/{{this.id}}">Titulo: <span>{{this.title}}</span></p></a>
+  <p class="p-books-edit"><span>Páginas: </span>{{this.pageqty}}</p>
+  <p class="p-books-edit"><span>Escritor: </span>{{this.author}}</p>
+
+ <button>
+    <a href="/books/edit/{{this.id}}">Editar livro</a>
+</button>
+
+</div>
+{{/each}}
+</div>

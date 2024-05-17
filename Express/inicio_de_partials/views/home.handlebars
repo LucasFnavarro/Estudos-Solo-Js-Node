@@ -1,0 +1,17 @@
+<h1>Inicio da nossa handlebars.</h1>
+<p>O nome do usuário é {{user.name}} {{user.surname}}</p>
+
+{{#if verify}}
+  <p>Você está logado e tem permissão para seguir.</p>
+
+{{else}}
+
+  <p>O seu cadastro não está completo, por favor termine-o para continuar.</p>
+
+{{/if}}
+
+{{#if authUser}}
+  <p>
+    Você está logado, clique aqui para ir pra próxima página.
+  </p>
+{{/if}}
